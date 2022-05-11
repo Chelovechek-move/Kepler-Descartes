@@ -3,7 +3,6 @@
 //
 
 #include "gtest/gtest.h"
-#include "my_project/SlaeBaseException.hpp"
 #include "my_project/utility/coordinates.hpp"
 #include "my_project/calculations/calculations.hpp"
 
