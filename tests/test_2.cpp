@@ -7,8 +7,8 @@
 #include "my_project/utility/coordinates.hpp"
 #include "my_project/calculations/calculations.hpp"
 
-TEST(Cartesian_to_Keplerian_to_Cartesian, Test1) {
-    CartesianCoordinates cart_coord = {1000000., 10., 5., -11., -1., 1.};
+TEST(Cartesian_to_Keplerian_to_Cartesian, Test3) {
+    CartesianCoordinates cart_coord = {1000000., 10000., 50., 0.01, 0.01, 0.01};
     CartesianCoordinates new_cart_coord = Keplerian_to_Cartesian(Cartesian_to_Keplerian(cart_coord));
 
     double tolerance = 10e-3;

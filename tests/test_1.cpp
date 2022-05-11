@@ -20,10 +20,11 @@ TEST(Cartesian_to_Keplerian_to_Cartesian, Test2) {
     ASSERT_NEAR(cart_coord.vx_, new_cart_coord.vx_, tolerance);
 
     std::cout << std::fixed << std::setprecision(5);
-    std::cout << "Old Cartesian coordinate x_ = " << cart_coord.x_ << " equals to new Cartesian coordinate x_ = " << new_cart_coord.x_ << std::endl;
-    std::cout << "Old Cartesian coordinate y_ = " << cart_coord.y_ << " equals to new Cartesian coordinate y_ = " << new_cart_coord.y_ << std::endl;
-    std::cout << "Old Cartesian coordinate z_ = " << cart_coord.z_ << " equals to new Cartesian coordinate z_ = " << new_cart_coord.z_ << std::endl;
-    std::cout << "Old Cartesian coordinate vx_ = " << cart_coord.vx_ << " equals to new Cartesian coordinate vx_ = " << new_cart_coord.vx_ << std::endl;
-    std::cout << "Old Cartesian coordinate vy_ = " << cart_coord.vy_ << " equals to new Cartesian coordinate vy_ = " << new_cart_coord.vy_ << std::endl;
-    std::cout << "Old Cartesian coordinate vz_ = " << cart_coord.vz_ << " equals to new Cartesian coordinate vz_ = " << new_cart_coord.vz_ << std::endl;
+    std::cout << std::left;
+    std::cout << "Old Cartesian coordinate x_  = " << std::setw(13) << cart_coord.x_ << " equals to new Cartesian coordinate x_  = " << new_cart_coord.x_ << std::endl;
+    std::cout << "Old Cartesian coordinate y_  = " << std::setw(13) << cart_coord.y_ << " equals to new Cartesian coordinate y_  = " << new_cart_coord.y_ << std::endl;
+    std::cout << "Old Cartesian coordinate z_  = " << std::setw(13) << cart_coord.z_ << " equals to new Cartesian coordinate z_  = " << new_cart_coord.z_ << std::endl;
+    std::cout << "Old Cartesian coordinate vx_ = " << std::setw(13) << cart_coord.vx_ << " equals to new Cartesian coordinate vx_ = " << new_cart_coord.vx_ << std::endl;
+    std::cout << "Old Cartesian coordinate vy_ = " << std::setw(13) << cart_coord.vy_ << " equals to new Cartesian coordinate vy_ = " << new_cart_coord.vy_ << std::endl;
+    std::cout << "Old Cartesian coordinate vz_ = " << std::setw(13) << cart_coord.vz_ << " equals to new Cartesian coordinate vz_ = " << new_cart_coord.vz_ << std::endl;
 }
