@@ -8,7 +8,7 @@ KeplerianCoordenates Cartesian_to_Keplerian(const CartesianCoordinates& coord) {
     KeplerianCoordenates new_coord;
     Vector3 r = {coord.x_, coord.y_, coord.z_};
     Vector3 v = {coord.vx_, coord.vy_, coord.vz_};
-    const double m = 398600.4415;
+    const double m = 398600.4415;       // Standard gravitational parameter for Earth
 
     Vector3 h = r.VectorMultiplyBy(v);
     Vector3 e = v.VectorMultiplyBy(h) / m - r / r.GetNorm();
@@ -43,7 +43,7 @@ CartesianCoordinates Keplerian_to_Cartesian(const KeplerianCoordenates& coord)
 {
     CartesianCoordinates new_coord;
     double p = coord.a_ * (1 - coord.e_ * coord.e_);
-    double m = 398600.4415;
+    double m = 398600.4415;         // Standard gravitational parameter for Earth
     double C = sqrt(p * m);
     double r = p / (1 + coord.e_ * cos(coord.v_));
     double u = coord.v_ + coord.w_;
